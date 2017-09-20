@@ -57,14 +57,14 @@ self.setLists = function (locs) {
             		location: self.copy()[locs[i]].location
     });
      }
-    for (var i = 0; i < markers.length; i++) {
-          markers[i].setMap(null);
+    for (var k = 0; k < markers.length; k++) {
+          markers[k].setMap(null);
         }
     for(var j=0;j < locs.length;j++)
     {
     	markers[locs[j]].setMap(map);
     }
-}
+};
 self.copy = ko.observableArray([
 new SetLocation("Great Ocean Road",0, self.location[0]),
 new SetLocation("Yarra River",1, self.location[1]),
@@ -86,7 +86,7 @@ new SetLocation("Geelong",9, self.location[9]),
 */
 this.setMarkerAndList = function()
 	{
-	var locs = new Array();
+	var locs = [];
 	var j = 0;
 	var sear = this.searchval();
 	for(var i=0;i<this.copy().length;i++)
@@ -100,11 +100,11 @@ this.setMarkerAndList = function()
 
 }
 this.setLists(locs);
-}
+};
 this.setInfo = function()
 	{
 		populateInfoWindow(markers[this.id]);
-	}
+	};
 
 my = {viewModel: new NeighborhoodMapViewModel()};
 ko.applyBindings(my.viewModel);
