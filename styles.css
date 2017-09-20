@@ -1,0 +1,90 @@
+html, body { height: 100%; width: 100%
+ margin: 0;
+  padding: 0;
+  display: block
+  background-color: #9499b7; }
+#map {
+  height: 100%;
+  padding: 0px;
+    margin: 0px;
+}
+
+.text-center {
+
+color: black}
+
+.foo
+{
+  position: fixed;
+  padding-top: 60px;
+}
+#list-1 {
+
+    color: white;
+}
+
+#list-1 a {
+    background-color: #49599a;
+    color: white; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding-bottom: 12px; /* Add some padding */
+    padding-top: 12px;
+    padding-right: 12px;
+    text-align: center; /* Remove underline from links */
+    margin: 0px;
+    font-family: 'Open Sans';
+    font-size: 20px;
+}
+
+#sidebar {
+  background-color: #9499b7;
+  padding: 20px;
+}
+
+#list-1 a:hover {
+    background-color: #aab6fe;
+    color: white;
+    border-bottom: solid;
+    border-bottom-color: #01579b;/* Dark grey background on mouse-over */
+}
+
+#list-1 a:focus {
+    background-color: #7986cb; /* Add a green color to the "active/current" link */
+    color: black;
+    border-bottom: solid;
+    border-bottom-color: #01579b;
+}
+h2 {
+   padding: 10px;
+  font-family: 'Sofia';
+    font-size: 20px;
+  color: #e3f2fd;
+    margin: 0px;
+}
+ul {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+div#hb {
+  float: right
+  border: 5px;
+    width: 25px;
+    height: 5px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+.navbar-blue {
+  background-color: #49599a;
+  font-family:'Open Sans Condensed'
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #49599a;
+    color: white;
+    text-align: center;
+}
