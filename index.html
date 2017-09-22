@@ -7,8 +7,6 @@
             <meta name="author" content="">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
             <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
             <link rel="stylesheet" href="styles.css">
         </head>
@@ -16,7 +14,7 @@
             <nav class="navbar navbar-blue navbar-fixed-top">
                 <div class="container-fluid">
                     <div class="navbar-header navbar-right">
-                        <h2>Tourist Places - Melbourne, Australia</h2>
+                        <h2 id ="head">Tourist Places - Melbourne, Australia</h2>
                     </div>
                     <form class="navbar-form navbar-left">
                         <div class="form-group">
@@ -49,27 +47,21 @@
 
 
                 </div>
-            </div>
-
                 <div class="footer">This page is developed using
                     <span>
                         <a href = "https://developers.google.com/maps/"><img src = "gmaps.png" alt = "Google Maps" height="42" width="42"></a> ||
                         <a href = "https://www.mediawiki.org/wiki/API:Main_page"><img src = "wiki.png" alt = "WikiPedia API" height="42" width="42"></a>||
                         <a href = "http://getbootstrap.com/"><img src = "bs.png" alt = "Bootstrap" height="42" width="42"></a> ||
                         <a href = "http://knockoutjs.com/"><img src = "ko.png" alt = "Knockout JS" height="42" width="80"></a>
+                    </span>
                 </div>
 
-            <script type="text/javascript" src="knockout-3.4.2.js"></script>
-            <script type="text/javascript">
-                function googleError()
-                    {
-                        document.getElementById("map").innerHTML="<h2 style=\"color:black;text-align:center\"> Please make sure Internet is connected and try again!</h2>";
-                     }
-
-            </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="knockout-3.4.2.js"></script>
+            <script src="ViewModel.js"></script>
+            <script src="map.js"></script>
             <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places&key=AIzaSyAoBLKOWB4_C0kbM_VeUd_BoBa_SUlNSm4&callback=initMap" onerror="googleError()"
             async defer></script>
-            <script type="text/javascript" src="ViewModel.js"></script>
-            <script type="text/javascript" src="map.js"></script>
         </body>
     </html>
