@@ -228,7 +228,6 @@ function setWikiText(title, marker) {
     var qry = title.replace(/ /g, "%20");
     var wikiURL = "https://en.wikipedia.org/w/api.php?action=opensearch&search=" + qry + "&format=json";
     $.ajax({
-        async: false,
         type: "GET",
         url: wikiURL,
         dataType: "jsonp",
